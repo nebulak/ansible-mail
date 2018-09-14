@@ -1,0 +1,4 @@
+[phantom]
+# hosts in the `phantom` group  use vars defined in `group_vars/phantom`
+# put your host's IP address or domain name below
+localhost

@@ -1,0 +1,17 @@
+---
+# This is the top-level playbook that defines our entire infrastructure.
+
+- hosts: all
+  user: deploy
+  become: True
+  gather_facts: True
+
+  roles:
+    #- os_hardening
+    #- hidden_service
+    - dbserver
+    - ssl
+    - systembasics
+    - postfix
+    - dovecot
+    - milter
